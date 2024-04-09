@@ -4,13 +4,107 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>toy.ua</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Jura:wght@300..700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Jura:wght@300..700&display=swap" rel="stylesheet"/>
+        <link rel="stylesheet" type="" href="styles.css" />
     </head>
     <body>
+        <header class="header_flex">
+            <nav class="navbar">
+                <div class="logo__container">
+                    <img id="navbar__logo"src="img/logo.jpg" alt="Logo" />
+                </div>
+                <div class="navbar_container">
+                    <ul class="navbar__menu">
+                        <li class="navbar__item">
+                            <a href="/" class="navbar__links">Про нас</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="/" class="navbar__links">Контакти</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="/" class="navbar__links">Новинки</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="/" class="navbar__links">Обім та повернення</a>
+                        </li>
+                    </ul>
+                </div>
+                <input type="text" id="navbar__search" placeholder="Пошук">
+                <button type="button" id="navbar__btn">Найти</button>
+            </nav>
+            <hr id="separator" style="width:75%;">
+            <div class="shopping__cart">
+                <img id="cart" src="./img/shopping-cart.png" alt="Shopping-cart">
+            </div>
+        </header>
 
+        <main class="main__container">
+            <section class="main__banner">
+                <div class="main__banner-container">
+                    <img id="main__banner" src="img/banner.png" alt="Banner" />
+                </div>
+            </section>
 
+            <section class="main__content">
+                <div class="tree__container">
+                    <img id="main__tree" src="img/tree.png" alt="Tree" />
+                </div>
 
+                <div class="catalogs">
+                    <div class="catalog">
+                        <h2 id="toys__title">Дитячі машинки</h2>
+                        <a href="./catalogs/toy_cars_for_children/toy_cars.html" id="toys__img-link">
+                            <img id="toys__img" src="img/car-toy.png" alt="Car Toy" />
+                        </a>
+                    </div>
+                    <div class="catalog">
+                        <h2 id="toys__title">Ляльки</h2>
+                        <a href="./catalogs/dolls_for_children/dolls.html" id="toys__img-link">
+                            <img id="toys__img" src="img/doll.jpg" alt="Dolls" />
+                        </a>
+                    </div>
+                    <div class="catalog">
+                        <h2 id="toys__title">Фігурки</h2>
+                        <a href="./catalogs/action_figures_for_children/action_figures.html" id="toys__img-link">
+                            <img id="toys__img" src="img/transformer.jpg" alt="Action Figures" />
+                        </a>
+                    </div>
+                    <div class="catalog">
+                        <h2 id="toys__title">М'які іграшки</h2>
+                        <a href="./catalogs/plushies_for_children/plushies.html" id="toys__img-link">
+                            <img id="toys__img" src="img/bear.jpg" alt="Plushies" />
+                        </a>
+                    </div>
+                    <div class="catalog">
+                        <h2 id="toys__title">Настільні ігри</h2>
+                        <a href="./catalogs/board_games_for_children/board_games.html" id="toys__img-link">
+                            <img id="toys__img" src="img/board-game.jpg" alt="Board Games" />
+                        </a>
+                    </div>
+                    <div class="catalog">
+                        <h2 id="toys__title">Іграшкова зброя</h2>
+                        <a href="./catalogs/toy_guns_for_children/toy_guns.html" id="toys__img-link">
+                            <img id="toys__img" src="img/gun.jpg" alt="Toy Guns" />
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer__container">
+                <ul class="foo_list">
+                    <li>
+                        <img id="foo__logo"src="img/logo.jpg" alt="Logo" />
+                    </li>
+                    <li>
+                        <h4 id="foo__title">2023-2024</h1>
+                    </li>      
+                </ul>
+            </div>
+            <p id="foo">&copy; 2024 Магазин іграшок toy.ua. Усі права захищені</p>
+        </footer>
     </body>
 </html>
