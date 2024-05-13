@@ -1,110 +1,197 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>toy.ua</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com"/>
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Jura:wght@300..700&display=swap" rel="stylesheet"/>
-        <link rel="stylesheet" type="" href="styles.css" />
-    </head>
-    <body>
-        <header class="header_flex">
-            <nav class="navbar">
-                <div class="logo__container">
-                    <img id="navbar__logo"src="img/logo.jpg" alt="Logo" />
-                </div>
-                <div class="navbar_container">
-                    <ul class="navbar__menu">
-                        <li class="navbar__item">
-                            <a href="#" class="navbar__links">Про нас</a>
-                        </li>
-                        <li class="navbar__item">
-                            <a href="#" class="navbar__links">Контакти</a>
-                        </li>
-                        <li class="navbar__item">
-                            <a href="#" class="navbar__links">Новинки</a>
-                        </li>
-                        <li class="navbar__item">
-                            <a href="#" class="navbar__links">Обім та повернення</a>
-                        </li>
-                    </ul>
-                </div>
-                <input type="text" id="navbar__search" placeholder="Пошук">
-                <button type="button" id="navbar__btn">Найти</button>
-            </nav>
-            <hr id="separator" style="width:75%;">
-            <div class="shopping__cart">
-                <img id="cart" src="./img/shopping-cart.png" alt="Shopping-cart">
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин іграшок - toy.ua</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Jura:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar__logo">
+                <a href="./index.html">
+                    <img src="img/logo.jpg" alt="Магазин іграшок - toy.ua">
+                </a>
             </div>
-        </header>
-
-        <main class="main__container">
-            <section class="main__banner">
-                <div class="main__banner-container">
-                    <img id="main__banner" src="img/banner.png" alt="Banner" />
-                </div>
-            </section>
-
-            <section class="main__content">
-                <div class="tree__container">
-                    <img id="main__tree" src="img/tree.png" alt="Tree" />
-                </div>
-
-                <div class="catalogs">
-                    <div class="catalog">
-                        <h2 id="toys__title">Дитячі машинки</h2>
-                        <a href="./catalogs/toy_cars_for_children/toy_cars.html" id="toys__img-link">
-                            <img id="toys__img" src="img/car-toy.png" alt="Car Toy" />
-                        </a>
-                    </div>
-                    <div class="catalog">
-                        <h2 id="toys__title">Ляльки</h2>
-                        <a href="./catalogs/dolls_for_children/dolls.html" id="toys__img-link">
-                            <img id="toys__img" src="img/doll.jpg" alt="Dolls" />
-                        </a>
-                    </div>
-                    <div class="catalog">
-                        <h2 id="toys__title">Фігурки</h2>
-                        <a href="./catalogs/action_figures_for_children/action_figures.html" id="toys__img-link">
-                            <img id="toys__img" src="img/transformer.jpg" alt="Action Figures" />
-                        </a>
-                    </div>
-                    <div class="catalog">
-                        <h2 id="toys__title">М'які іграшки</h2>
-                        <a href="./catalogs/plushies_for_children/plushies.html" id="toys__img-link">
-                            <img id="toys__img" src="img/bear.jpg" alt="Plushies" />
-                        </a>
-                    </div>
-                    <div class="catalog">
-                        <h2 id="toys__title">Настільні ігри</h2>
-                        <a href="./catalogs/board_games_for_children/board_games.html" id="toys__img-link">
-                            <img id="toys__img" src="img/board-game.jpg" alt="Board Games" />
-                        </a>
-                    </div>
-                    <div class="catalog">
-                        <h2 id="toys__title">Іграшкова зброя</h2>
-                        <a href="./catalogs/toy_guns_for_children/toy_guns.html" id="toys__img-link">
-                            <img id="toys__img" src="img/gun.jpg" alt="Toy Guns" />
-                        </a>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <footer>
-            <div class="footer__container">
-                <ul class="foo_list">
-                    <li>
-                        <img id="foo__logo"src="img/logo.jpg" alt="Logo" />
+            <div class="navbar__table">
+                <ul class="navbar__menu">
+                    <li class="navbar__item">
+                        <a href="#about" class="navbar__link">Про нас</a>
                     </li>
-                    <li>
-                        <h4 id="foo__title">2023-2024</h1>
-                    </li>      
+                    <li class="navbar__item">
+                        <a href="#contacts" class="navbar__link">Контакти</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#new-arrivals" class="navbar__link">Новинки</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#returns" class="navbar__link">Обмін та повернення</a>
+                    </li>
                 </ul>
             </div>
-            <p id="foo">&copy; 2024 Магазин іграшок toy.ua. Усі права захищені</p>
-        </footer>
-    </body>
+            
+            <div class="navbar__search">
+                <input type="text" id="search-input" placeholder="Пошук">
+                <button type="button" id="search-btn">Знайти</button>
+            </div>
+            <div class="navbar__cart">
+                <img src="./img/shopping-cart.png" alt="Кошик">
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="banner">
+            <img src="img/banner.png" alt="Банер">
+        </section>
+
+        <section class="categories">
+            <div class="hot_sellers">
+                <h4 class="hot_sellers_title">
+                    В тренді
+                </h4>
+                <div class="hot_sellers_items">
+                    <div class="hot_sellers_item">
+                        <a href="#">
+                            <img src="./img/toy_car1.jpg" alt="Іграшкова гоночна машинка" class="hot_sellers_img">
+                        </a>
+                        <p>
+                            Сімейна машинка для лялькового будиночка Hape - червона - дитяча дерев'яна іграшка-машина від 3
+                        </p>
+                        <div class="item-btn">
+                            <h3>
+                                219 грн
+                            </h3>
+                            <button class="btn" type="button">
+                                додати в кошик
+                            </button>
+                        </div>
+                    </div>
+                    <div class="hot_sellers_item">
+                        <a href="#">
+                            <img src="./img/toy_car2.jpg" alt="Іграшкова гоночна машинка" class="hot_sellers_img">
+                        </a>
+                        <p>
+                            Green Toys Car Carrier з 3 міні-машинками - 100% перероблений пластик
+                        </p>
+                        <div class="item-btn">
+                            <h3>
+                                199 грн
+                            </h3>
+                            <button class="btn" type="button">додати в кошик</button>
+                        </div>
+                    </div>
+                    <div class="hot_sellers_item">
+                        <a href="#">
+                            <img src="./img/doll_img1.jpg" alt="Кукла" class="hot_sellers_img">
+                        </a>
+                        <p>
+                            Ляльки Lissi - Talking Baby, 11 дюймів
+                        </p>
+                        <div class="item-btn">
+                            <h3>
+                                399 грн
+                            </h3>
+                            <button class="btn" type="button">додати в кошик</button>
+                        </div>
+                    </div>
+                    <div class="hot_sellers_item">
+                        <a href="#">
+                            <img src="./img/doll_img2.jpg" alt="Кукла" class="hot_sellers_img">
+                        </a>
+                        <p>
+                            Лялька Healthy Roots - Зоя
+                        </p>
+                        <div class="item-btn">
+                            <h3>
+                                699 грн
+                            </h3>
+                            <button class="btn" type="button">додати в кошик</button>
+                        </div>
+                    </div>
+                    <div class="hot_sellers_item">
+                        <a href="#">
+                            <img src="./img/fig_img_1.jpg" alt="Ashe" class="hot_sellers_img">
+                        </a>
+                        <p>
+                            League of Legends, офіційна колекційна фігурка Ashe розміром 6 дюймів
+                        </p>
+                        <div class="item-btn">
+                            <h3>
+                                259 грн
+                            </h3>
+                            <button class="btn" type="button">додати в кошик</button>
+                        </div>
+                    </div>
+                    <div class="hot_sellers_item">
+                        <a href="#">
+                            <img src="./img/bg_img1.jpg" alt="Santa-Opoly Board Game" class="hot_sellers_img">
+                        </a>
+                        <p>
+                            Настільна гра Санта-Ополія
+                        </p>
+                        <div class="item-btn">
+                            <h3>
+                                1099 грн
+                            </h3>
+                            <button class="btn" type="button">додати в кошик</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="categories__list">
+                <div class="category">
+                    <h2 class="category__title">Дитячі машинки</h2>
+                    <a href="./catalogs/toy_cars_for_children/toy_cars.html" class="category__link">
+                        <img src="img/car-toy.png" alt="Дитячі машинки" class="category__image">
+                    </a>
+                </div>
+                <div class="category">
+                    <h2 class="category__title">Ляльки</h2>
+                    <a href="./catalogs/dolls_for_children/dolls.html" class="category__link">
+                        <img src="img/doll.jpg" alt="Ляльки" class="category__image">
+                    </a>
+                </div>
+                <div class="category">
+                    <h2 class="category__title">Фігурки</h2>
+                    <a href="./catalogs/action_figures_for_children/action_figures.html" class="category__link">
+                        <img src="img/transformer.jpg" alt="Фігурки" class="category__image">
+                    </a>
+                </div>
+                <div class="category">
+                    <h2 class="category__title">М'які іграшки</h2>
+                    <a href="./catalogs/plushies_for_children/plushies.html" class="category__link">
+                        <img src="img/bear.jpg" alt="М'які іграшки" class="category__image">
+                    </a>
+                </div>
+                <div class="category">
+                    <h2 class="category__title">Настільні ігри</h2>
+                    <a href="./catalogs/board_games_for_children/board_games.html" class="category__link">
+                        <img src="img/board-game.jpg" alt="Настільні ігри" class="category__image">
+                    </a>
+                </div>
+                <div class="category">
+                    <h2 class="category__title">Іграшкова зброя</h2>
+                    <a href="./catalogs/toy_guns_for_children/toy_guns.html" class="category__link">
+                        <img src="img/gun.jpg" alt="Іграшкова зброя" class="category__image">
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer__logo">
+            <img src="img/logo.jpg" alt="Магазин іграшок - toy.ua">
+        </div>
+        <div class="footer__info">
+            <p>&copy; 2023-2024 Магазин іграшок toy.ua. Усі права захищені.</p>
+        </div>
+    </footer>
+</body>
 </html>
