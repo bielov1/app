@@ -1,63 +1,62 @@
 <!DOCTYPE html>
 <html lang="uk">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Магазин іграшок - toy.ua</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Jura:wght@300..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles.css">
-    <script defer src="./script.js"></script>
-</head>
-<body>
-    <header>
-        <nav class="navbar">
-            <div class="navbar__logo">
-                <a href="./index.html">
-                    <img src="img/logo.jpg" alt="Магазин іграшок - toy.ua">
-                </a>
-            </div>
-            <div class="navbar__table">
-                <ul class="navbar__menu">
-                    <li class="navbar__item">
-                        <a href="#about" class="navbar__link">Про нас</a>
-                    </li>
-                    <li class="navbar__item">
-                        <a href="#contacts" class="navbar__link">Контакти</a>
-                    </li>
-                    <li class="navbar__item">
-                        <a href="#new-arrivals" class="navbar__link">Новинки</a>
-                    </li>
-                    <li class="navbar__item">
-                        <a href="#returns" class="navbar__link">Обмін та повернення</a>
-                    </li>
-                </ul>
-            </div>
-            
-            <div class="navbar__search">
-                <input type="text" id="search-input" placeholder="Пошук">
-                <button type="button" id="search-btn">Знайти</button>
-            </div>
-            <div class="navbar__cart">
-                <img src="./img/shopping-cart.png" alt="Кошик">
-            </div>
-        </nav>
-    </header>
-
-    <main>
-        <section class="banner">
-            <img src="img/banner.png" alt="Банер">
-        </section>
-
-        <section class="categories">
-            <div class="hot_sellers">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Магазин іграшок - toy.ua</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Jura:wght@300..700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./styles.css">
+        <script defer src="./script.js"></script>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <div class="navbar__logo">
+                    <a href="./index.html">
+                        <img src="img/logo.jpg" alt="Магазин іграшок - toy.ua">
+                    </a>
+                </div>
+                <div class="navbar__table">
+                    <ul class="navbar__menu">
+                        <li class="navbar__item">
+                            <a href="#about" class="navbar__link">Про нас</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="#contacts" class="navbar__link">Контакти</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="#new-arrivals" class="navbar__link">Новинки</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="#returns" class="navbar__link">Обмін та повернення</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="navbar__search">
+                    <input type="text" id="search-input" placeholder="Пошук">
+                    <button type="button" id="search-btn">Знайти</button>
+                </div>
+                <div class="navbar__cart">
+                    <img src="./img/shopping-cart.png" alt="Кошик">
+                </div>
+            </nav>
+        </header>
+    
+        <main>
+            <section class="banner">
+                <img src="img/banner.png" alt="Банер">
+            </section>
+    
+            <section class="hot_sellers">
                 <h4 class="hot_sellers_title">
                     В тренді
                 </h4>
                 <div class="hot_sellers_items">
                     <button class="scroll-left" onclick="left()">&lt;</button>
-
+    
                     <div class="hot_sellers_item">
                         <a href="#">
                             <img src="./img/toy_car1.jpg" alt="Іграшкова гоночна машинка" class="hot_sellers_img">
@@ -69,7 +68,7 @@
                             <h3>
                                 219 грн
                             </h3>
-                            <button class="btn" type="button">
+                            <button type="button">
                                 додати в кошик
                             </button>
                         </div>
@@ -85,7 +84,7 @@
                             <h3>
                                 199 грн
                             </h3>
-                            <button class="btn" type="button">додати в кошик</button>
+                            <button type="button">додати в кошик</button>
                         </div>
                     </div>
                     <div class="hot_sellers_item">
@@ -99,7 +98,7 @@
                             <h3>
                                 399 грн
                             </h3>
-                            <button class="btn" type="button">додати в кошик</button>
+                            <button type="button">додати в кошик</button>
                         </div>
                     </div>
                     <div class="hot_sellers_item">
@@ -113,7 +112,7 @@
                             <h3>
                                 699 грн
                             </h3>
-                            <button class="btn" type="button">додати в кошик</button>
+                            <button type="button">додати в кошик</button>
                         </div>
                     </div>
                     <div class="hot_sellers_item">
@@ -127,7 +126,7 @@
                             <h3>
                                 259 грн
                             </h3>
-                            <button class="btn" type="button">додати в кошик</button>
+                            <button type="button">додати в кошик</button>
                         </div>
                     </div>
                     <div class="hot_sellers_item">
@@ -141,10 +140,10 @@
                             <h3>
                                 1099 грн
                             </h3>
-                            <button class="btn" type="button">додати в кошик</button>
+                            <button type="button">додати в кошик</button>
                         </div>
                     </div>
-
+    
                     <div class="hot_sellers_item">
                         <a href="#">
                             <img src="./img/toy_gun_img1.jpg" alt="Air Warriors: Carnivore - Blaster Dart Gun" class="hot_sellers_img">
@@ -156,10 +155,10 @@
                             <h3>
                                 599 грн
                             </h3>
-                            <button class="btn" type="button">додати в кошик</button>
+                            <button type="button">додати в кошик</button>
                         </div>
                     </div>
-
+    
                     <div class="hot_sellers_item">
                         <a href="#">
                             <img src="./img/toy_gun_img2.jpg" alt="Kid Galaxy Bubble Blaster" class="hot_sellers_img">
@@ -171,10 +170,10 @@
                             <h3>
                                 399 грн
                             </h3>
-                            <button class="btn" type="button">додати в кошик</button>
+                            <button type="button">додати в кошик</button>
                         </div>
                     </div>
-
+    
                     <div class="hot_sellers_item">
                         <a href="#">
                             <img src="./img/pl_toy_img1.jpg" alt="Santa-Opoly Board Game" class="hot_sellers_img">
@@ -186,10 +185,10 @@
                             <h3>
                                 199 грн
                             </h3>
-                            <button class="btn" type="button">додати в кошик</button>
+                            <button type="button">додати в кошик</button>
                         </div>
                     </div>
-
+    
                     <div class="hot_sellers_item">
                         <a href="#">
                             <img src="./img/doll_img3.jpg" alt="Santa-Opoly Board Game" class="hot_sellers_img">
@@ -201,10 +200,10 @@
                             <h3>
                                 311 грн
                             </h3>
-                            <button class="btn" type="button">додати в кошик</button>
+                            <button type="button">додати в кошик</button>
                         </div>
                     </div>
-
+    
                     <div class="hot_sellers_item">
                         <a href="#">
                             <img src="./img/fig_img3.jpg" alt="Schleich Eldrador Creatures: Jungle Creature" class="hot_sellers_img">
@@ -216,15 +215,15 @@
                             <h3>
                                 899 грн
                             </h3>
-                            <button class="btn" type="button">додати в кошик</button>
+                            <button type="button">додати в кошик</button>
                         </div>
                     </div>
                     
                     <button class="scroll-right" onclick="right()">&gt;</button>
                 </div>
-            </div>
-
-            <div class="categories__list">
+            </section>
+    
+            <section class="categories">
                 <div class="category">
                     <h2 class="category__title">Дитячі машинки</h2>
                     <a href="./catalogs/toy_cars_for_children/toy_cars.html" class="category__link">
@@ -261,17 +260,13 @@
                         <img src="img/gun.jpg" alt="Іграшкова зброя" class="category__image">
                     </a>
                 </div>
+            </section>
+        </main>
+    
+        <footer>
+            <div class="footer__info">
+                <p>&copy; 2023-2024 Магазин іграшок toy.ua. Усі права захищені.</p>
             </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="footer__logo">
-            <img src="img/logo.jpg" alt="Магазин іграшок - toy.ua">
-        </div>
-        <div class="footer__info">
-            <p>&copy; 2023-2024 Магазин іграшок toy.ua. Усі права захищені.</p>
-        </div>
-    </footer>
-</body>
+        </footer>
+    </body>
 </html>
