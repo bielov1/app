@@ -353,11 +353,15 @@ footer {
   }
 
   .navbar__logo img {
-    min-width: 2vw;
-    min-height: 2vw;
+    min-width: 20vw;
+    min-height: 10vw;
     width: 100%;
     height: auto;
     margin: 0 0;
+  }
+
+  .navbar__table {
+    font-size: 3vw;
   }
 
   .hot_sellers_title {
